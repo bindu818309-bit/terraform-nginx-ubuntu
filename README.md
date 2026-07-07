@@ -45,9 +45,10 @@ variable "key_name" {
   type        = string
   default     = null
 }
-2. main.tf
+```
+### 2. `main.tf`
 Houses the core architectural blueprint declaration, complete with embedded inline validation logic.
-
+```
 Terraform
 # ==============================================================================
 # 1. PROVIDER & VERSION SPECIFICATIONS
@@ -169,17 +170,21 @@ resource "aws_instance" "nginx_server" {
     ManagedBy   = "Terraform"
   }
 }
-3. outputs.tf
+```
+### 3. `outputs.tf`
 Tracks metadata targets and pushes real-time dynamic runtime states into your local console screen.
-
+```
 Terraform
 output "instance_public_ip" {
   description = "The public IP address exposed by the newly provisioned EC2 engine instance."
   value       = aws_instance.nginx_server.public_ip
 }
-Deployment & Execution Playbook
-Execute all specified operations using Terraform CLI binary endpoints from inside your active directory terminal profile.
+```
+---
 
+## Deployment & Execution Playbook
+Execute all specified operations using Terraform CLI binary endpoints from inside your active directory terminal profile.
+```
 Step 1: Subsystem Initialization
 Prepares local environments, mapping state backends and downloading the respective cloud API integration frameworks.
 
@@ -214,3 +219,4 @@ Completely reverse all operational setups and clean out all active cloud objects
 Bash
 terraform destroy
 Key in yes when prompted to verify full teardown confirmation.
+
