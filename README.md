@@ -198,20 +198,40 @@ terraform plan
 Step 3: Core Convergence Operations
 Validates changes and starts live remote API scheduling commands.
 
+```
+
+Example plan output:
+
+### After Plan execution
+![Plan](screenshots/terrPlan.png)
+
 Bash
 terraform apply
 Interactive Prompt: Review terminal messages, key in yes, and hit Enter.
 
+### Apply
+![Apply](screenshots/planOutput.png)
+
 Output Processing: Once the orchestration process concludes, copy the logged instance_public_ip token parameter string printed on screen.
 
+### Outputs
+![Output](screenshots/outputs.png)
+```
 Step 4: Workload Verification
 Give the underlying hardware initialization matrix roughly 60-90 seconds to finish processing the execution array inside the package download manager.
 
 Direct any standard web browser application engine to the logged IP string, for example: http://<YOUR_INSTANCE_PUBLIC_IP>.
 
+```
+### nginx output page
+![Nginx](screenshots/nginxoutput.png)
+
+```
 Verify that your landing view successfully renders: "Welcome to the Terraform-managed Nginx Server on Ubuntu".
 
 Capture a clean screenshot displaying the complete browser navigation field view alongside this page header for your course portal submission package.
+
+```
 
 Step 5: Clean Teardown Operations
 Completely reverse all operational setups and clean out all active cloud objects to guarantee zero orphaned resource charges.
@@ -219,4 +239,8 @@ Completely reverse all operational setups and clean out all active cloud objects
 Bash
 terraform destroy
 Key in yes when prompted to verify full teardown confirmation.
+```
+### After applying Destroy
+![Destroycmdoutput](screenshots/tfdestroy.png)
+
 
