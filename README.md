@@ -226,12 +226,11 @@ Direct any standard web browser application engine to the logged IP string, for 
 ### nginx output page
 ![Nginx](screenshots/nginxoutput.png)
 
-```
+
 Verify that your landing view successfully renders: "Welcome to the Terraform-managed Nginx Server on Ubuntu".
 
 Capture a clean screenshot displaying the complete browser navigation field view alongside this page header for your course portal submission package.
 
-```
 
 Step 5: Clean Teardown Operations
 Completely reverse all operational setups and clean out all active cloud objects to guarantee zero orphaned resource charges.
@@ -239,8 +238,7 @@ Completely reverse all operational setups and clean out all active cloud objects
 Bash
 terraform destroy
 Key in yes when prompted to verify full teardown confirmation.
-```
-### After applying Destroy
-![Destroycmdoutput](screenshots/tfdestroy.png)
 
+### After Applying Destroy 
+![Destroy](screenshots/tfdestroy.png)
 
